@@ -1,0 +1,190 @@
+:root{
+    --primary-color:#4dcadd;
+    --secondary-color:#4dcadd;
+    --signup-color:#2da833;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color:#fff;
+    height: 55px;
+    padding:1rem;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+body{
+    background-color: #fff;
+    /*background-color: #c3c5c8;*/
+}
+.content{
+    margin: 0 auto;
+    width:940px;
+    background-color: #fff;
+}
+ul {
+    display:flex;
+    list-style-type: none;
+}
+.py {
+    padding: 1rem;
+}
+.px{
+    padding-right: 1rem;
+}
+.pt{
+    padding-top: 1rem;
+}
+
+/*Login Right Side*/
+.form-login input[type=text], select{
+    padding: 5px 10px;
+    display:inline-block;
+    border:0px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.form-login input[type=password], select{
+    padding: 5px 10px;
+    border:0px;
+    display:inline-block;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+.form-login button{
+    background-color: #457fa0;
+    padding: 0.4rem;
+    color:#fff;
+    border:0px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#container{
+    display:grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'l-side r-side'
+    'l-side r-side'
+    'l-side r-side';
+}
+/*IMAGE Mk Map*/
+.mk-map img{
+    width:600px;
+    height: 300px;
+    object-fit: contain;
+    padding-top: 1rem;
+}
+/*Left Side Boxes*/
+.l-side{
+    grid-area: l-side;
+}
+.boxes{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.l-side i{
+    box-shadow: 0 0 0 3px #4dcadd;
+    border-radius: 50%;
+    border:2px #fff solid;
+    padding:1rem;
+    color:#fff;
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+}
+.l-side h4{
+    padding-top: 1rem;
+}
+.l-side p{
+    color:#737373;
+}
+.l-side h4{
+    text-transform: uppercase;
+}
+/*Right Side*/
+.r-side{
+    
+    color:#333;
+    grid-area: r-side;
+}
+/*Form Signup*/
+.form-singup h4,p{
+    text-align: center;
+}
+.form-singup{
+    display:flex;
+    flex-flow: column;
+    padding:1rem;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding:20px;
+    margin-top: 0.4rem;
+    border-right:5px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow:2px 3px 5px #ccc;
+}
+.form-singup input[type=text], select{
+    padding: 12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-singup input[type=password], select{
+    padding: 12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-singup input[type=email], select{
+    padding: 12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-singup button{
+    background-color: var(--signup-color);
+    color:#fff;
+    border:0px;
+    cursor: pointer;
+}
+.form-singup button{
+    padding:1rem;
+    font-size: large;
+}
+
+.form-a a{
+    color:var(--primary-color) !important;
+}
+.form-a {
+    padding: 1rem;
+}
+
+/*Footer*/
+.footer{
+    background-color:var(--primary-color);
+    bottom: 0;
+    left:0;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    color:#fff;
+    padding:1rem;
+    text-align: center;
+}
